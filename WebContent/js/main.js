@@ -1,0 +1,41 @@
+const windowcon = document.querySelector('.windowcon'),
+  container = document.querySelector('.container'),
+     slides = document.querySelectorAll('img'),
+     slidecounter = slides.length;
+let currentIndex = 0;
+
+for(i=0; i < slidecounter; i++){
+    slides[i].style.left = `${i*100}%`;
+}
+
+function calcul(){
+     for(i=0; i<slidecounter; i++){
+          if(windowcon.offsetHeight < slides[i].offsetHeight){
+               windowcon.style.height = slides[i].offsetHeight + "px";
+               windowcon.style.width = slides[i].offsetWidth + "px";
+             }
+        }
+ }
+calcul();
+var lele = 0; 
+var i = 0; 
+function moveleft(){ 
+    if(i < slidecounter-1){ 
+        lele += 100; 
+        i++; 
+        container.style.transition = '.3s' 
+    }else{ 
+        container.style.transition = '0s' 
+        lele = 0; 
+        i = 0; 
+    } 
+    container.style.left = "-" + lele + "%";
+
+} 
+
+function moveevent(){ 
+    setInterval(moveleft, 1000) 
+} 
+
+moveevent();
+

@@ -1,0 +1,139 @@
+header {
+    height: 220px;
+    }
+body {
+    color: #444444;
+    font-family: "돋움";
+}
+section {
+    height: 400px;
+}
+footer {
+    height: 300px;
+}
+
+
+li {
+    list-style: none;
+}
+.clear{
+    clear: both;
+}
+.box {
+    width: 1320px;
+    margin: 0 auto;
+}
+#content_box {
+    width: 1320px;
+    height: 300px;
+    margin: 0 auto;
+    padding-top: 50px;
+}
+#content_box h3 {
+    float:left;
+    margin-left: 590px;
+}
+#content_box p {
+    float:right;
+}
+.items {
+    width: 200px;
+    height: 200px;
+    float: left;
+    margin: 30px 0px 70px 20px;
+}
+.items .a {
+    font-weight: bold;
+    color: black;
+    margin-top: 20px;
+}
+.items .b {
+    font-weight: bold;
+    color: black;
+    margin-top: 8px;
+}
+
+
+#menu {
+    width: 1500px;
+    height: 100px;
+    clear: both;
+    
+}
+
+ul.navi {
+    float: left;
+    width: 1500px;
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
+    background: #000;
+    -moz-border-radius-topright: 10px;
+    -webkit-border-top-right-radius: 10px;
+    -moz-border-radius-topleft: 10px;
+    -webkit-border-top-left-radius: 10px;
+}
+
+ul.navi li {
+    display: inline;
+}
+
+ul.navi li a {
+    float: left;
+    font: bold 14px 함초롱바탕;
+    line-height: 40px;
+    color: #fff;
+    text-decoration: none;
+    text-shadow: 1px 1px 1px #880000;
+    margin: 0 auto;
+    padding: 0 30px;
+    background: #000;
+    -moz-border-radius-topright: 10px;
+    -webkit-border-top-right-radius: 10px;
+    -moz-border-radius-topleft: 10px;
+    -webkit-border-top-left-radius: 10px;
+}
+
+ul.navi .current a, ul.navi li:hover > a { 
+    color: #fff;
+    text-decoration: none; 
+    text-shadow: 1px 1px 1px #330000; 
+    background: #000; 
+    -moz-border-radius-topright: 10px; 
+    -webkit-border-top-right-radius: 10px;
+    -moz-border-radius-topleft: 10px;
+    -webkit-border-top-left-radius: 10px; 
+}
+
+ul.navi ul { display: none; }
+
+ul.navi li:hover > ul {
+    position: absolute; 
+    display: block;
+    width: 1460px; 
+    height: 45px; 
+    margin: 40px 0 0 0; 
+    background: #666; 
+    -moz-border-radius-bottomright: 10px;
+    -webkit-border-bottom-right-radius: 10px;
+    -moz-border-radius-bottomleft: 10px;
+    -webkit-border-bottom-left-radius: 10px; 
+}
+
+ul.navi li:hover > ul li a {
+    float: left;
+    font: bold 14px  함초롱바탕;
+    line-height: 45px;
+    color: #fff;
+    text-decoration: none;
+    text-shadow: 1px 1px 1px #110000;
+    margin: 0 auto;
+    padding: 0 30px 0 0;
+    background: #666;
+}
+
+ul.navi li:hover > ul li a:hover {
+    color: #120000;
+    text-decoration: none;
+    text-shadow: none;
+}
